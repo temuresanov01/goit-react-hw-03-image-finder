@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-// import Spinner from "./Loader/Loader";
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import './App.css';
+import Spinner from './Loader/Loader';
 import imageApi from './services/api';
 import SearchBar from './SearchBar/SearchBar.jsx';
 import ImageGallery from './ImageGallery/ImageGallery.jsx';
@@ -89,7 +90,7 @@ class App extends Component {
         <div>
           <SearchBar submit={this.onFormSubmit} />
           {result.length > 0 && <ImageGallery result={result} />}
-          {/* <Spinner /> */}
+          <Spinner />
         </div>
       );
     }
