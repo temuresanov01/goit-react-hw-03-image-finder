@@ -14,3 +14,4 @@
 //   );
 // };
 // export default Spinner;
+// не работает 
